@@ -1,0 +1,800 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: getcurrentstockprice1
+  namespace: getcurrentstockprice
+spec:
+  schedule: "*/2 0-6 * * 1-5"
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      ttlSeconAfterFinished: 60
+      template:
+        spec:
+          containers:
+          - name: getcurrentstockprice1
+            image: outk/getcurrentstockprice:v0.0.1
+            # imagePullPolicy: "Always"
+            env:
+            - name: PALLAREL_NUM
+              value: "20"
+            - name: PALLAREL_ID
+              value: "0"
+            - name: CONTROL_ID
+              value: ""
+            - name: LOGIN_CONTROL_ID
+              value: ""
+            - name: PAGE_ID
+              value: ""
+            - name: LOGIN_PAGE_ID
+              value: ""
+            - name: DATA_STORE_ID
+              value: ""
+            - name: LOGIN_ID
+              value: ""
+            - name: LOGIN_PASS
+              value: ""
+          restartPolicy: Never
+
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: getcurrentstockprice2
+  namespace: getcurrentstockprice
+spec:
+  schedule: "*/2 0-6 * * 1-5"
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      ttlSeconAfterFinished: 60
+      template:
+        spec:
+          containers:
+          - name: getcurrentstockprice2
+            image: outk/getcurrentstockprice:v0.0.1
+            # imagePullPolicy: "Always"
+            env:
+            - name: PALLAREL_NUM
+              value: "20"
+            - name: PALLAREL_ID
+              value: "1"
+            - name: CONTROL_ID
+              value: ""
+            - name: LOGIN_CONTROL_ID
+              value: ""
+            - name: PAGE_ID
+              value: ""
+            - name: LOGIN_PAGE_ID
+              value: ""
+            - name: DATA_STORE_ID
+              value: ""
+            - name: LOGIN_ID
+              value: ""
+            - name: LOGIN_PASS
+              value: ""
+          restartPolicy: Never
+
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: getcurrentstockprice3
+  namespace: getcurrentstockprice
+spec:
+  schedule: "*/2 0-6 * * 1-5"
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      ttlSeconAfterFinished: 60
+      template:
+        spec:
+          containers:
+          - name: getcurrentstockprice3
+            image: outk/getcurrentstockprice:v0.0.1
+            # imagePullPolicy: "Always"
+            env:
+            - name: PALLAREL_NUM
+              value: "20"
+            - name: PALLAREL_ID
+              value: "2"
+            - name: CONTROL_ID
+              value: ""
+            - name: LOGIN_CONTROL_ID
+              value: ""
+            - name: PAGE_ID
+              value: ""
+            - name: LOGIN_PAGE_ID
+              value: ""
+            - name: DATA_STORE_ID
+              value: ""
+            - name: LOGIN_ID
+              value: ""
+            - name: LOGIN_PASS
+              value: ""
+          restartPolicy: Never
+
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: getcurrentstockprice4
+  namespace: getcurrentstockprice
+spec:
+  schedule: "*/2 0-6 * * 1-5"
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      ttlSeconAfterFinished: 60
+      template:
+        spec:
+          containers:
+          - name: getcurrentstockprice4
+            image: outk/getcurrentstockprice:v0.0.1
+            # imagePullPolicy: "Always"
+            env:
+            - name: PALLAREL_NUM
+              value: "20"
+            - name: PALLAREL_ID
+              value: "3"
+            - name: CONTROL_ID
+              value: ""
+            - name: LOGIN_CONTROL_ID
+              value: ""
+            - name: PAGE_ID
+              value: ""
+            - name: LOGIN_PAGE_ID
+              value: ""
+            - name: DATA_STORE_ID
+              value: ""
+            - name: LOGIN_ID
+              value: ""
+            - name: LOGIN_PASS
+              value: ""
+          restartPolicy: Never
+
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: getcurrentstockprice5
+  namespace: getcurrentstockprice
+spec:
+  schedule: "*/2 0-6 * * 1-5"
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      ttlSeconAfterFinished: 60
+      template:
+        spec:
+          containers:
+          - name: getcurrentstockprice5
+            image: outk/getcurrentstockprice:v0.0.1
+            # imagePullPolicy: "Always"
+            env:
+            - name: PALLAREL_NUM
+              value: "20"
+            - name: PALLAREL_ID
+              value: "4"
+            - name: CONTROL_ID
+              value: ""
+            - name: LOGIN_CONTROL_ID
+              value: ""
+            - name: PAGE_ID
+              value: ""
+            - name: LOGIN_PAGE_ID
+              value: ""
+            - name: DATA_STORE_ID
+              value: ""
+            - name: LOGIN_ID
+              value: ""
+            - name: LOGIN_PASS
+              value: ""
+          restartPolicy: Never
+
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: getcurrentstockprice6
+  namespace: getcurrentstockprice
+spec:
+  schedule: "*/2 0-6 * * 1-5"
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      ttlSeconAfterFinished: 60
+      template:
+        spec:
+          containers:
+          - name: getcurrentstockprice6
+            image: outk/getcurrentstockprice:v0.0.1
+            # imagePullPolicy: "Always"
+            env:
+            - name: PALLAREL_NUM
+              value: "20"
+            - name: PALLAREL_ID
+              value: "5"
+            - name: CONTROL_ID
+              value: ""
+            - name: LOGIN_CONTROL_ID
+              value: ""
+            - name: PAGE_ID
+              value: ""
+            - name: LOGIN_PAGE_ID
+              value: ""
+            - name: DATA_STORE_ID
+              value: ""
+            - name: LOGIN_ID
+              value: ""
+            - name: LOGIN_PASS
+              value: ""
+          restartPolicy: Never
+
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: getcurrentstockprice7
+  namespace: getcurrentstockprice
+spec:
+  schedule: "*/2 0-6 * * 1-5"
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      ttlSeconAfterFinished: 60
+      template:
+        spec:
+          containers:
+          - name: getcurrentstockprice7
+            image: outk/getcurrentstockprice:v0.0.1
+            # imagePullPolicy: "Always"
+            env:
+            - name: PALLAREL_NUM
+              value: "20"
+            - name: PALLAREL_ID
+              value: "6"
+            - name: CONTROL_ID
+              value: ""
+            - name: LOGIN_CONTROL_ID
+              value: ""
+            - name: PAGE_ID
+              value: ""
+            - name: LOGIN_PAGE_ID
+              value: ""
+            - name: DATA_STORE_ID
+              value: ""
+            - name: LOGIN_ID
+              value: ""
+            - name: LOGIN_PASS
+              value: ""
+          restartPolicy: Never
+
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: getcurrentstockprice8
+  namespace: getcurrentstockprice
+spec:
+  schedule: "*/2 0-6 * * 1-5"
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      ttlSeconAfterFinished: 60
+      template:
+        spec:
+          containers:
+          - name: getcurrentstockprice8
+            image: outk/getcurrentstockprice:v0.0.1
+            # imagePullPolicy: "Always"
+            env:
+            - name: PALLAREL_NUM
+              value: "20"
+            - name: PALLAREL_ID
+              value: "7"
+            - name: CONTROL_ID
+              value: ""
+            - name: LOGIN_CONTROL_ID
+              value: ""
+            - name: PAGE_ID
+              value: ""
+            - name: LOGIN_PAGE_ID
+              value: ""
+            - name: DATA_STORE_ID
+              value: ""
+            - name: LOGIN_ID
+              value: ""
+            - name: LOGIN_PASS
+              value: ""
+          restartPolicy: Never
+
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: getcurrentstockprice9
+  namespace: getcurrentstockprice
+spec:
+  schedule: "*/2 0-6 * * 1-5"
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      ttlSeconAfterFinished: 60
+      template:
+        spec:
+          containers:
+          - name: getcurrentstockprice9
+            image: outk/getcurrentstockprice:v0.0.1
+            # imagePullPolicy: "Always"
+            env:
+            - name: PALLAREL_NUM
+              value: "20"
+            - name: PALLAREL_ID
+              value: "8"
+            - name: CONTROL_ID
+              value: ""
+            - name: LOGIN_CONTROL_ID
+              value: ""
+            - name: PAGE_ID
+              value: ""
+            - name: LOGIN_PAGE_ID
+              value: ""
+            - name: DATA_STORE_ID
+              value: ""
+            - name: LOGIN_ID
+              value: ""
+            - name: LOGIN_PASS
+              value: ""
+          restartPolicy: Never
+
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: getcurrentstockprice10
+  namespace: getcurrentstockprice
+spec:
+  schedule: "*/2 0-6 * * 1-5"
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      ttlSeconAfterFinished: 60
+      template:
+        spec:
+          containers:
+          - name: getcurrentstockprice10
+            image: outk/getcurrentstockprice:v0.0.1
+            # imagePullPolicy: "Always"
+            env:
+            - name: PALLAREL_NUM
+              value: "20"
+            - name: PALLAREL_ID
+              value: "9"
+            - name: CONTROL_ID
+              value: ""
+            - name: LOGIN_CONTROL_ID
+              value: ""
+            - name: PAGE_ID
+              value: ""
+            - name: LOGIN_PAGE_ID
+              value: ""
+            - name: DATA_STORE_ID
+              value: ""
+            - name: LOGIN_ID
+              value: ""
+            - name: LOGIN_PASS
+              value: ""
+          restartPolicy: Never
+
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: getcurrentstockprice11
+  namespace: getcurrentstockprice
+spec:
+  schedule: "*/2 0-6 * * 1-5"
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      ttlSeconAfterFinished: 60
+      template:
+        spec:
+          containers:
+          - name: getcurrentstockprice11
+            image: outk/getcurrentstockprice:v0.0.1
+            # imagePullPolicy: "Always"
+            env:
+            - name: PALLAREL_NUM
+              value: "20"
+            - name: PALLAREL_ID
+              value: "10"
+            - name: CONTROL_ID
+              value: ""
+            - name: LOGIN_CONTROL_ID
+              value: ""
+            - name: PAGE_ID
+              value: ""
+            - name: LOGIN_PAGE_ID
+              value: ""
+            - name: DATA_STORE_ID
+              value: ""
+            - name: LOGIN_ID
+              value: ""
+            - name: LOGIN_PASS
+              value: ""
+          restartPolicy: Never
+
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: getcurrentstockprice12
+  namespace: getcurrentstockprice
+spec:
+  schedule: "*/2 0-6 * * 1-5"
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      ttlSeconAfterFinished: 60
+      template:
+        spec:
+          containers:
+          - name: getcurrentstockprice12
+            image: outk/getcurrentstockprice:v0.0.1
+            # imagePullPolicy: "Always"
+            env:
+            - name: PALLAREL_NUM
+              value: "20"
+            - name: PALLAREL_ID
+              value: "11"
+            - name: CONTROL_ID
+              value: ""
+            - name: LOGIN_CONTROL_ID
+              value: ""
+            - name: PAGE_ID
+              value: ""
+            - name: LOGIN_PAGE_ID
+              value: ""
+            - name: DATA_STORE_ID
+              value: ""
+            - name: LOGIN_ID
+              value: ""
+            - name: LOGIN_PASS
+              value: ""
+          restartPolicy: Never
+
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: getcurrentstockprice13
+  namespace: getcurrentstockprice
+spec:
+  schedule: "*/2 0-6 * * 1-5"
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      ttlSeconAfterFinished: 60
+      template:
+        spec:
+          containers:
+          - name: getcurrentstockprice13
+            image: outk/getcurrentstockprice:v0.0.1
+            # imagePullPolicy: "Always"
+            env:
+            - name: PALLAREL_NUM
+              value: "20"
+            - name: PALLAREL_ID
+              value: "12"
+            - name: CONTROL_ID
+              value: ""
+            - name: LOGIN_CONTROL_ID
+              value: ""
+            - name: PAGE_ID
+              value: ""
+            - name: LOGIN_PAGE_ID
+              value: ""
+            - name: DATA_STORE_ID
+              value: ""
+            - name: LOGIN_ID
+              value: ""
+            - name: LOGIN_PASS
+              value: ""
+          restartPolicy: Never
+
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: getcurrentstockprice14
+  namespace: getcurrentstockprice
+spec:
+  schedule: "*/2 0-6 * * 1-5"
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      ttlSeconAfterFinished: 60
+      template:
+        spec:
+          containers:
+          - name: getcurrentstockprice14
+            image: outk/getcurrentstockprice:v0.0.1
+            # imagePullPolicy: "Always"
+            env:
+            - name: PALLAREL_NUM
+              value: "20"
+            - name: PALLAREL_ID
+              value: "13"
+            - name: CONTROL_ID
+              value: ""
+            - name: LOGIN_CONTROL_ID
+              value: ""
+            - name: PAGE_ID
+              value: ""
+            - name: LOGIN_PAGE_ID
+              value: ""
+            - name: DATA_STORE_ID
+              value: ""
+            - name: LOGIN_ID
+              value: ""
+            - name: LOGIN_PASS
+              value: ""
+          restartPolicy: Never
+
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: getcurrentstockprice15
+  namespace: getcurrentstockprice
+spec:
+  schedule: "*/2 0-6 * * 1-5"
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      ttlSeconAfterFinished: 60
+      template:
+        spec:
+          containers:
+          - name: getcurrentstockprice15
+            image: outk/getcurrentstockprice:v0.0.1
+            # imagePullPolicy: "Always"
+            env:
+            - name: PALLAREL_NUM
+              value: "20"
+            - name: PALLAREL_ID
+              value: "14"
+            - name: CONTROL_ID
+              value: ""
+            - name: LOGIN_CONTROL_ID
+              value: ""
+            - name: PAGE_ID
+              value: ""
+            - name: LOGIN_PAGE_ID
+              value: ""
+            - name: DATA_STORE_ID
+              value: ""
+            - name: LOGIN_ID
+              value: ""
+            - name: LOGIN_PASS
+              value: ""
+          restartPolicy: Never
+
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: getcurrentstockprice16
+  namespace: getcurrentstockprice
+spec:
+  schedule: "*/2 0-6 * * 1-5"
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      ttlSeconAfterFinished: 60
+      template:
+        spec:
+          containers:
+          - name: getcurrentstockprice16
+            image: outk/getcurrentstockprice:v0.0.1
+            # imagePullPolicy: "Always"
+            env:
+            - name: PALLAREL_NUM
+              value: "20"
+            - name: PALLAREL_ID
+              value: "15"
+            - name: CONTROL_ID
+              value: ""
+            - name: LOGIN_CONTROL_ID
+              value: ""
+            - name: PAGE_ID
+              value: ""
+            - name: LOGIN_PAGE_ID
+              value: ""
+            - name: DATA_STORE_ID
+              value: ""
+            - name: LOGIN_ID
+              value: ""
+            - name: LOGIN_PASS
+              value: ""
+          restartPolicy: Never
+
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: getcurrentstockprice17
+  namespace: getcurrentstockprice
+spec:
+  schedule: "*/2 0-6 * * 1-5"
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      ttlSeconAfterFinished: 60
+      template:
+        spec:
+          containers:
+          - name: getcurrentstockprice17
+            image: outk/getcurrentstockprice:v0.0.1
+            # imagePullPolicy: "Always"
+            env:
+            - name: PALLAREL_NUM
+              value: "20"
+            - name: PALLAREL_ID
+              value: "16"
+            - name: CONTROL_ID
+              value: ""
+            - name: LOGIN_CONTROL_ID
+              value: ""
+            - name: PAGE_ID
+              value: ""
+            - name: LOGIN_PAGE_ID
+              value: ""
+            - name: DATA_STORE_ID
+              value: ""
+            - name: LOGIN_ID
+              value: ""
+            - name: LOGIN_PASS
+              value: ""
+          restartPolicy: Never
+
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: getcurrentstockprice18
+  namespace: getcurrentstockprice
+spec:
+  schedule: "*/2 0-6 * * 1-5"
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      ttlSeconAfterFinished: 60
+      template:
+        spec:
+          containers:
+          - name: getcurrentstockprice18
+            image: outk/getcurrentstockprice:v0.0.1
+            # imagePullPolicy: "Always"
+            env:
+            - name: PALLAREL_NUM
+              value: "20"
+            - name: PALLAREL_ID
+              value: "17"
+            - name: CONTROL_ID
+              value: ""
+            - name: LOGIN_CONTROL_ID
+              value: ""
+            - name: PAGE_ID
+              value: ""
+            - name: LOGIN_PAGE_ID
+              value: ""
+            - name: DATA_STORE_ID
+              value: ""
+            - name: LOGIN_ID
+              value: ""
+            - name: LOGIN_PASS
+              value: ""
+          restartPolicy: Never
+
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: getcurrentstockprice19
+  namespace: getcurrentstockprice
+spec:
+  schedule: "*/2 0-6 * * 1-5"
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      ttlSeconAfterFinished: 60
+      template:
+        spec:
+          containers:
+          - name: getcurrentstockprice19
+            image: outk/getcurrentstockprice:v0.0.1
+            # imagePullPolicy: "Always"
+            env:
+            - name: PALLAREL_NUM
+              value: "20"
+            - name: PALLAREL_ID
+              value: "18"
+            - name: CONTROL_ID
+              value: ""
+            - name: LOGIN_CONTROL_ID
+              value: ""
+            - name: PAGE_ID
+              value: ""
+            - name: LOGIN_PAGE_ID
+              value: ""
+            - name: DATA_STORE_ID
+              value: ""
+            - name: LOGIN_ID
+              value: ""
+            - name: LOGIN_PASS
+              value: ""
+          restartPolicy: Never
+
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: getcurrentstockprice20
+  namespace: getcurrentstockprice
+spec:
+  schedule: "*/2 0-6 * * 1-5"
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      ttlSeconAfterFinished: 60
+      template:
+        spec:
+          containers:
+          - name: getcurrentstockprice20
+            image: outk/getcurrentstockprice:v0.0.1
+            # imagePullPolicy: "Always"
+            env:
+            - name: PALLAREL_NUM
+              value: "20"
+            - name: PALLAREL_ID
+              value: "19"
+            - name: CONTROL_ID
+              value: ""
+            - name: LOGIN_CONTROL_ID
+              value: ""
+            - name: PAGE_ID
+              value: ""
+            - name: LOGIN_PAGE_ID
+              value: ""
+            - name: DATA_STORE_ID
+              value: ""
+            - name: LOGIN_ID
+              value: ""
+            - name: LOGIN_PASS
+              value: ""
+          restartPolicy: Never
+
+---

@@ -1,0 +1,62 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: tradeclient
+  namespace: tradeclient
+spec:
+  schedule: "5 0 * * 1-5"
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      ttlSecondsAfterFinished: 60
+      template:
+        spec:
+          containers:
+          - name: tradeclient
+            image: outk/tradeclient:v0.0.1
+            imagePullPolicy: "Always"
+            env:
+            - name: GET_RECOMMENDER_NAMESPACE
+              value: ""
+            - name: TRADE_PWD 
+              value: ""
+            - name: LOGIN_ID 
+              value: ""
+            - name: LOGIN_PASS
+              value: ""
+            - name: LOGIN_PAGE_ID
+              value: ""
+            - name: LOGIN_CONTROL_ID
+              value: ""
+            - name: GET_PRICE_PAGE_ID
+              value: ""
+            - name: GET_PRICE_DATA_STORE_ID
+              value: ""
+            - name: GET_PRICE_CONTROL_ID
+              value: "l"
+            - name: GET_BUYING_POWER_PAGE_ID
+              value: ""
+            - name: GET_BUYING_POWER_DATA_STORE_ID
+              value: ""
+            - name: GET_BUYING_POWER_CONTROL_ID
+              value: ""
+            - name: GET_STOCK_HOLDINGS_PAGE_ID
+              value: ""
+            - name: GET_STOCK_HOLDINGS_DATA_STORE_ID
+              value: ""
+            - name: GET_STOCK_HOLDINGS_CONTROL_ID
+              value: ""
+            - name: BUY_ORDER_PAGE_ID
+              value: ""
+            - name: BUY_ORDER_CONTROL_ID
+              value: ""
+            - name: SELL_ORDER_PAGE_ID
+              value: ""
+            - name: SELL_ORDER_CONTROL_ID
+              value: ""
+            - name: ORDER_CANCEL_PAGE_ID
+              value: ""
+            - name: ORDER_CANCEL_CONTROL_ID
+              value: ""
+          restartPolicy: Never

@@ -1,0 +1,20 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: recommend
+  namespace: recommend
+spec:
+  schedule: "*/2 0-6 * * 1-5"
+  successfulJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: recommend
+            image: outk/recommendstockcronjob:v0.0.2
+            # imagePullPolicy: "Always"
+            env:
+            - name: GET_PODS_NAMESPACE
+              value: "getcurrentstockprice"
+          restartPolicy: Never

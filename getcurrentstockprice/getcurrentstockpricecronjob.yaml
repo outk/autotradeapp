@@ -1,0 +1,37 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: getcurrentstockprice1
+  namespace: getcurrentstockprice
+spec:
+  schedule: "*/2 * * * 1-5"
+  successfulJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      ttlSecondsAfterFinished: 60
+      template:
+        spec:
+          containers:
+          - name: getcurrentstockprice1
+            image: outk/getcurrentstockprice:v0.0.1
+            # imagePullPolicy: "Always"
+            env:
+            - name: PALLAREL_NUM
+              value: "20"
+            - name: PALLAREL_ID
+              value: "0"
+            - name: CONTROL_ID
+              value: ""
+            - name: LOGIN_CONTROL_ID
+              value: ""
+            - name: PAGE_ID
+              value: ""
+            - name: LOGIN_PAGE_ID
+              value: ""
+            - name: DATA_STORE_ID
+              value: ""
+            - name: LOGIN_ID
+              value: ""
+            - name: LOGIN_PASS
+              value: ""
+          restartPolicy: Never
