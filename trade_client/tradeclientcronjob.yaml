@@ -34,7 +34,7 @@ spec:
             - name: GET_PRICE_DATA_STORE_ID
               value: ""
             - name: GET_PRICE_CONTROL_ID
-              value: "l"
+              value: ""
             - name: GET_BUYING_POWER_PAGE_ID
               value: ""
             - name: GET_BUYING_POWER_DATA_STORE_ID
